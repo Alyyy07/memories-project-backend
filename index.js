@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true, limit: "30mb" }));
 
 app.use("/posts", postRoutes);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 
 app.get("/", (req, res) => {
   res.send("Hello to memories API");
