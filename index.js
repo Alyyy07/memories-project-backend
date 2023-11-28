@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
   res.send("Hello to memories API");
 });
 
+
 mongoose
   .connect(process.env.CONNECTION_URL)
   .then(() => app.listen(port, () => console.log(`Server runnning on port:${port}`)))
